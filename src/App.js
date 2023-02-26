@@ -3,9 +3,11 @@ import './App.css';
 import { FaBed } from 'react-icons/fa';
 import { FaUtensils } from 'react-icons/fa';
 import { FaBus } from 'react-icons/fa';
-import { FaSpa } from 'react-icons/fa';
-import { FaSpaceShuttle } from 'react-icons/fa';
 import { BiSpa } from "react-icons/bi";
+import { FaFacebook } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
+import { FaTwitter } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
 import Aboutimg from "../src/img/about1.jpeg"
 import img1 from './img/1.jpeg'
 import img2 from './img/2.jpeg'
@@ -17,6 +19,8 @@ import room3 from './img/room3.jpeg'
 import p1 from './img/p1.jpeg'
 import p2 from './img/p2.jpeg'
 import p3 from './img/p3.jpeg'
+import contactİmg from "../src/img/contact.jpeg"
+
 
 
 
@@ -182,6 +186,43 @@ function App() {
             </div>
           </div>
         </section>
+
+        {/* Contact */}
+
+        <section className="contact">
+          <div className="flex-items">
+            <div className="column">
+              <div className="column-1">
+                <img src={contactİmg}></img>
+              </div>
+            </div>
+            <div className="column">
+              <h2>Contact Us</h2>
+              <form className="contact-form">
+               
+                <label>Name</label>
+                <input placeholder="Enter your name"></input>
+                
+                <label>E-mail</label>
+                <input placeholder="Enter your email"></input>
+                <label>Phone</label>
+                <input placeholder="Enter your phone"></input>
+                <button className="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        {/* footer */}
+
+        <footer>
+          <div className="social">
+            <a><i><FaFacebook/></i></a>
+            <a><i><FaInstagram/></i></a>
+            <a><i><FaTwitter/></i></a>
+            <a><i><FaLinkedin/></i></a>
+          </div>
+        </footer>
      
    
     </div>
